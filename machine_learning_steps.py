@@ -20,3 +20,7 @@ data.describe()
 # missing data imputation
 # encoding categorical variables
 # standardizing the data
+
+# after data preprocessing is complete split the data into train and test
+from sklearn.model_selection import train_test_split
+X_train, y_train, X_test, y_test = train_test_split(X, y, random_state=111, test_size=0.3)
